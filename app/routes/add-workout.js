@@ -1,8 +1,6 @@
 import Ember from "ember";
 
 export default Ember.Route.extend({
-    isTypeOfWorkoutSelected: false,
-
     model() {
         // boulder endurance, rope endurance, boulder power, isolation power, boulder power endurance, rope power endurnace
         return [
@@ -31,5 +29,5 @@ export default Ember.Route.extend({
                 title: "Rope Power Endurance"
             }
         ];
-    }
+    },
 });

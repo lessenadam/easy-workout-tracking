@@ -14,6 +14,7 @@ export default Ember.Component.extend({
     text: null,
     id: null,
     click(e) {
-        console.warn(e);
+        // console.warn(e);
+        this.sendAction('select', this.get('id'));
     }
 });

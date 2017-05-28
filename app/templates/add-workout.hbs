@@ -1,13 +1,16 @@
 <div>
-  <h2>Select A Workout</h2>
-  {{#unless isTypeOfWorkoutSelected}}
-    <div class="button-container">
-        {{#each model as |workoutOption|}}
-            {{selectable-button
-                text=workoutOption.title
-                id=workoutOption.id
-            }}
-        {{/each}}
-    </div>
-  {{/unless}}
+    <h2>Select A Workout</h2>
+    {{#if isTypeOfWorkoutSelected}}
+        selected a workout
+    {{else}}
+        <div class="button-container">
+            {{#each model as |workoutOption|}}
+                {{selectable-button
+                    text=workoutOption.title
+                    id=workoutOption.id
+                    select="selectWorkout"
+                }}
+            {{/each}}
+        </div>
+    {{/if}}
 </div>
