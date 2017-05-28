@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('add-workout');
+  this.route('freestyle');
 });
 
 export default Router;
