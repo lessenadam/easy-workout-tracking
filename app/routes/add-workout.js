@@ -10,27 +10,33 @@ export default Ember.Route.extend({
         return [
             {
                 id: "boulder-endurance",
-                title: "Boulder Endurance"
+                title: "Boulder Endurance",
+                abbreviatedTitle: "BE"
             },
             {
                 id: "rope-endurance",
-                title: "Rope Endurance"
+                title: "Rope Endurance",
+                abbreviatedTitle: "RE"
             },
             {
                 id: "boulder-power",
-                title: "Boulder Power"
+                title: "Boulder Power",
+                abbreviatedTitle: "BP"
             },
             {
                 id: "isolation-power",
-                title: "Isolation Power"
+                title: "Isolation Power",
+                abbreviatedTitle: "IP"
             },
             {
                 id: "boulder-power-endurance",
-                title: "Boulder Power Endurance"
+                title: "Boulder Power Endurance",
+                abbreviatedTitle: "BPE"
             },
             {
                 id: "rope-power-endurance",
-                title: "Rope Power Endurance"
+                title: "Rope Power Endurance",
+                abbreviatedTitle: "RPE"
             }
         ];
     },

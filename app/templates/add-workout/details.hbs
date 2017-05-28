@@ -2,34 +2,9 @@
 
 {{!-- this could be a nav component? --}}
 <div class="links">
-    {{#link-to (query-params type="boulder-endurance")}}
-        {{!-- <div class="link-container"> --}}
-            BE
-        {{!-- </div> --}}
+    {{#each model as |workoutOption|}}
+        {{#link-to (query-params type=workoutOption.id) title=workoutOption.title}}
+            {{workoutOption.abbreviatedTitle}}
         {{/link-to}}
-    {{#link-to (query-params type="rope-endurance")}}
-        {{!-- <div class="link-container"> --}}
-            RE
-        {{!-- </div> --}}
-    {{/link-to}}
-    {{#link-to (query-params type="boulder-power")}}
-        {{!-- <div class="link-container"> --}}
-            BP
-        {{!-- </div> --}}
-    {{/link-to}}
-    {{#link-to (query-params type="isolation-power")}}
-        {{!-- <div class="link-container"> --}}
-            IP
-        {{!-- </div> --}}
-    {{/link-to}}
-    {{#link-to (query-params type="boulder-power-endurance")}}
-        {{!-- <div class="link-container"> --}}
-            BPE
-        {{!-- </div> --}}
-    {{/link-to}}
-    {{#link-to (query-params type="rope-power-endurance")}}
-        {{!-- <div class="link-container"> --}}
-            RPE
-        {{!-- </div> --}}
-    {{/link-to}}
+    {{/each}}
 </div>
