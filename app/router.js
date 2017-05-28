@@ -7,7 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('add-workout');
+  this.route('add-workout', function() {
+    this.route('new');
+    this.route('details');
+  });
   this.route('freestyle');
 });
 

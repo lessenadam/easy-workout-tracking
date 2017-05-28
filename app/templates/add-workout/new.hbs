@@ -1,0 +1,10 @@
+<h3>Select A Workout</h3>
+<div class="button-container">
+    {{#each model as |workoutOption|}}
+        {{selectable-button
+            text=workoutOption.title
+            id=workoutOption.id
+            select="selectWorkout"
+        }}
+    {{/each}}
+</div>
