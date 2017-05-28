@@ -1,0 +1,10 @@
+<div>
+  <h2>Select A Workout</h2>
+  {{#unless isTypeOfWorkoutSelected}}
+    {{#each model as |workoutOption|}}
+        <div>
+            {{workoutOption.title}}
+        </div>
+    {{/each}}
+  {{/unless}}
+</div>
