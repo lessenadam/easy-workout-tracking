@@ -24,6 +24,25 @@
     transform: scale(1.02);
 }
 
+.links {
+    display: flex;
+    min-width: 80%;
+}
+
+.links a {
+    font-family: "Courier", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+.links a.active {
+    border-bottom: 3px solid #d69111;
+    font-weight: 600;
+}
+
 
 .button-container {
     padding: 20px 20px;
