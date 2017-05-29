@@ -1,4 +1,4 @@
-{{type}}
+{{currentWorkout.title}}
 
 {{!-- this could be a nav component? --}}
 <div class="links">
@@ -8,3 +8,18 @@
         {{/link-to}}
     {{/each}}
 </div>
+
+{{#each workoutSets as |set index|}}
+    {{workout-set
+        set=set
+        type=type
+        index=index
+        removeSet="removeSet"
+    }}
+{{/each}}
+
+{{selectable-button
+    text="add set"
+    isDarkThemed=true
+    select="addSet"
+}}

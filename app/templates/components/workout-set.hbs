@@ -1,0 +1,13 @@
+Set #{{count}}
+<div>
+    {{#each workoutValues as |value|}}
+    {{exercise-tracker
+        type=type
+        value=value
+    }}
+        {{!-- <div>
+            <input type="number">
+            {{value}}
+        </div> --}}
+    {{/each}}
+</div>

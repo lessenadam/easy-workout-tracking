@@ -10,6 +10,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
     classNames: ['selectable-button'],
+    classNameBindings: ['isDarkThemed:selectable-button--dark'],
 
     text: null,
     id: null,

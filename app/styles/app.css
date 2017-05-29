@@ -10,6 +10,8 @@
     padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
     font-family: "Courier", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
@@ -24,9 +26,20 @@
     transform: scale(1.02);
 }
 
+.selectable-button--dark {
+    background: #E7C994;
+    color: black;
+}
+
+.selectable-button--dark:hover {
+    background: #E7C994;
+}
+
 .links {
     display: flex;
     min-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .links a {
@@ -39,7 +52,7 @@
 }
 
 .links a.active {
-    border-bottom: 3px solid #d69111;
+    border-bottom: 3px solid #17333C;
     font-weight: 600;
 }
 
